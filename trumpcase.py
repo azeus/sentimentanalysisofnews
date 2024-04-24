@@ -1,0 +1,8 @@
+import transformers
+from transformers import pipeline
+sentiment_pipeline = pipeline("sentiment-analysis")
+print(sentiment_pipeline(' 120 arrested at NYU while Columbia donor pulls funding as pro-Palestine protests sweep college campuses'))
+print(sentiment_pipeline('Girl, 7, among five dead on Channel migrant boat'))
+print(sentiment_pipeline('People around the world have been captivated by Baby Reindeer, a compelling story thats incredibly emotional, dark, jarring, and for many, quite difficult to watch. Several fans of the show have praised the series for its very honest and truthful depiction of a victim of sexual assault, with very frank discussions about sexual violence and grooming.'))
+print(sentiment_pipeline('Gold completed a 50% retracement today with a low of 2,291 before buyers took control and ran the precious metal up to a high of 2,334, at the time of this writing. Earlier in Tuesday’s session the sellers were in control and dropped gold down to below its 20-Day MA to test support around the 50% retracement of the internal upswing. The 50% level is at 2,289. That is close enough given the subsequent bullish reaction following that low.'))
+print(sentiment_pipeline('Everyone knows them, kids everywhere love them. Lunchables have been on store shelves and in school lunches everywhere since 1985. But a study from Consumer Reports has many parents concerned after elevated levels of sodium and lead were found in select Lunchables from different brands. Because of this, many families are trying to figure out healthier alternatives to the convenient grab-and-go kits, keeping the same appeal to kids that Lunchables offers, while also allowing busier families that same convenience the pre-made snacks offer.'))
